@@ -1,7 +1,9 @@
-#include <lpc23xx.h>
-#include "Glcd.h"
-#include "Delay.h"
-unsigned char const otolux_bmp[1024] = {
+' ------------------------------------------------------  
+' GLCD Picture name: otolux.bmp            
+' GLCD Model: KS0108 128x64            
+' ------------------------------------------------------  
+
+const otolux_bmp as byte[1024] = (
  255,255,255,255,255, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 
   31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 
   31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 
@@ -66,19 +68,4 @@ unsigned char const otolux_bmp[1024] = {
  252,252,252,252,252,252,252,252,252,252,252,252,252,252,252,252, 
  252,252,252,252,252,252,252,252,252,252,252,252,252,252,252,252, 
  252,252,252,252,252,252,252,252,252,252,252,255,255,255,255,255 
-};
- int main(void){
- 	SCS=1;
-   glcd_init();
- 	while(1){
-	//delay_ms(1000);
-	glcd_fill();
-	delay_ms(1000);
-	 WriteString(0,0,"Engineer Rahimi",15);
-	 WriteString(4,0,"Developer Rahimi",16);
-	delay_ms(1000);	  
-	glcd_display(otolux_bmp);
-	delay_ms(1000);
-
- 	}					   
- }
+)

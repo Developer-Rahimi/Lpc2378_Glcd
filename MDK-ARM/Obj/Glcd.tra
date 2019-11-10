@@ -1,0 +1,22 @@
+*** Creating Trace Output File '.\Obj\Glcd.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\lpc2300.o"'
+### List of Objects: adding '".\obj\main.o"'
+### List of Objects: adding '".\obj\glcd.o"'
+### List of Objects: adding '".\obj\delay.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI ".\obj\lpc2300.o" ".\obj\main.o" ".\obj\glcd.o" ".\obj\delay.o" --strict --scatter ".\Obj\Glcd.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Glcd.map" -o ".\Obj\Glcd.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Obj\Glcd.axf'
+### ADS-LD Command File: '.\Obj\Glcd.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Obj\Glcd.lnp', Handle=0x0000108C
+### Writing '.lnp' file
+### ADS-LD Command file '.\Obj\Glcd.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
